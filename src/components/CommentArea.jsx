@@ -1,22 +1,15 @@
 import { Component } from "react";
+import CommentsList from "./CommentsList";
+import AddComment from "./AddComment";
 
 class CommentArea extends Component {
-  state = {
-    comments: {
-      comment: "",
-      rate: "",
-      elementId: ""
-    }
-  };
-  /*   handelChange = (propName, propValue) => {
-    this.setState({
-      ...this.state.comments,
-      [propName]: propValue
-    });
-  }; */
-
   render() {
-    return <p>Sezione Commenti</p>;
+    return (
+      <>
+        <CommentsList />
+        <AddComment />
+      </>
+    );
   }
 }
 

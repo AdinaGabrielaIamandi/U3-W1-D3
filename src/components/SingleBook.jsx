@@ -8,15 +8,17 @@ class SingleBook extends Component {
 
   render() {
     return (
-      <Card
-        onClick={() => this.setState({ selected: !this.state.selected })}
-        style={{ border: this.state.selected ? "3px solid red" : "none" }}
-        className="m-2"
-      >
+      <Card className="m-2">
         <Card.Img
+          onClick={() => this.setState({ selected: !this.state.selected })}
           variant="top"
           src={this.props.book.img}
-          style={{ objectFit: "cover", width: "100%", aspectRatio: "1/1.5" }}
+          style={{
+            objectFit: "cover",
+            width: "100%",
+            aspectRatio: "1/1.5",
+            border: this.state.selected ? "3px solid red" : "none"
+          }}
         />
         <Card.Body>
           <Card.Title className="text-truncate" style={{ color: "black" }}>
