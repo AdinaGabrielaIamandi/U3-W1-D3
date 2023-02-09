@@ -3,7 +3,7 @@ import "./App.css";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
 import BookList from "./components/BookList";
-import History from "./data/history.json";
+import Fantasy from "./data/fantasy.json";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
       <MyNav />
       <Welcome />
-      <BookList books={History} />
+      <BookList books={Fantasy} />
       <MyFooter />
     </>
   );
