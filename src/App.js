@@ -8,12 +8,12 @@ import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <MyNav />
       <Welcome />
-      <BookList book={History} />
+      <BookList books={History} />
       <MyFooter />
-    </div>
+    </>
   );
 }
 
